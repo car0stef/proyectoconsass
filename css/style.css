@@ -124,19 +124,11 @@
 
   main {
     font-size: 85%;
+    height: 100%;
   }
 
   footer {
     font-size: 85%;
-  }
-
-  .fondoMain {
-    height: 100%;
-  }
-
-  #gridAreas {
-    grid-template-columns: 101.2%;
-    grid-template-rows: 1fr auto 1fr;
   }
 
   /*main index TABLET*/
@@ -144,45 +136,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3%;
+    padding: 3% 0;
+    height: 60%;
   }
-
-  .flexArticleImgIndex {
+  .flexArticleIndex .divMainIndex {
     flex-direction: row;
     justify-content: center;
-    width: 90%;
+    width: 85%;
+    height: 150%;
   }
-
-  .flexArticleImgIndex img {
+  .flexArticleIndex .divMainIndex img {
+    width: 35%;
     padding: 1.5%;
   }
 
   .flexArticleTextoIndex {
     flex-direction: row;
     justify-content: center;
-    width: 90%;
+    width: 80%;
   }
-
   .flexArticleTextoIndex p {
     padding: 1.5%;
-    text-align: center;
+    width: 40%;
+    text-align: left;
   }
 
   /*main nosotros TABLET*/
   .flexSectionNosotros2 {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 2% 0;
     width: 100%;
   }
-
-  .divVideoNosotros {
+  .flexSectionNosotros2 .divVideoNosotros {
     justify-content: center;
     padding-right: 0;
     padding: 2% 0;
   }
-
-  .divVideoNosotros video {
+  .flexSectionNosotros2 .divVideoNosotros video {
     padding-right: 0;
     padding: 0 1.5%;
   }
@@ -190,7 +182,6 @@
   .divTextoNosotros {
     width: 70%;
   }
-
   .divTextoNosotros p {
     text-align: justify;
   }
@@ -213,34 +204,39 @@
     font-size: 70%;
   }
 
-  #gridAreas {
-    grid-template-columns: 101%;
-    grid-template-rows: 1fr auto 1fr;
+  /*main index SMARTPHONE*/
+  .sectionMainIndex p {
+    text-align: justify;
   }
 
-  /*main index SMARTPHONE*/
   .flexArticleIndex {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3%;
+    padding: 3% 0;
+    height: 60%;
   }
-
-  .flexArticleImgIndex {
-    flex-direction: column;
+  .flexArticleIndex .divMainIndex {
+    flex-direction: row;
     justify-content: center;
-    width: 90%;
+    width: 85%;
+    height: 150%;
+  }
+  .flexArticleIndex .divMainIndex img {
+    width: 40%;
+    padding: 2%;
   }
 
   .flexArticleTextoIndex {
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 95%;
-    padding-top: 5%;
   }
-
   .flexArticleTextoIndex p {
-    text-align: center;
+    padding: 2%;
+    width: 80%;
+    text-align: justify;
   }
 
   /*main nosotros SMARTPHONE*/
@@ -251,27 +247,23 @@
   .flexSectionNosotros2 {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 2% 0;
     width: 100%;
   }
-
-  .divVideoNosotros {
-    flex-direction: column;
-    align-items: center;
+  .flexSectionNosotros2 .divVideoNosotros {
+    justify-content: center;
     padding-right: 0;
-    padding: 0;
+    padding: 2% 0;
   }
-
-  .divVideoNosotros video {
+  .flexSectionNosotros2 .divVideoNosotros video {
     padding-right: 0;
-    padding-bottom: 3%;
-    width: 50%;
+    padding: 0 1.5%;
   }
 
   .divTextoNosotros {
     width: 70%;
   }
-
   .divTextoNosotros p {
     text-align: justify;
   }
